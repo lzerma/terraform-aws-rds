@@ -11,7 +11,7 @@ module "lzerma-aws-rds" {
   stack_details = {
     env = "${var.stack_details["env"]}"
     version = "${var.stack_details["version"]}"
-    region = "${var.aws["region"]}"
+    region = "${var.stack_details["region"]}"
   }
 
   rds = {
